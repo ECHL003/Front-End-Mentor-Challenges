@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.section-background {
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-container {
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 1rem;
+    padding: 4rem;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card-img {
+    border-radius: 9.0rem;
+    width: 30%;
+    margin-bottom: 2.5rem;
+}
+
+.card-name {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.card-location {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(75, 94%, 57%);
+    margin-bottom: 2rem;
+}
+
+.card-description {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.586);
+    margin-bottom: 1.5rem;
+}
+
+.card-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8rem;
+    margin: 0.7rem;
+    background-color: hsl(0, 0%, 20%);
+    padding: 1.5rem;
+    width: 110%;
+}
+
+.card-link-container:last-child {
+    margin-bottom: 0;
+}
+
+.card-link-text {
+    font-weight: 700;
+    color: white;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
