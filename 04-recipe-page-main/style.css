@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+.section-background {
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.card-container {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 480px;
+}
+
+.section-hero {
+   display: inline;
+}
+
+.hero-img {
+    border-radius: 0.9rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-title {
+    font-family: 'Young Serif', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-txt {
+    font-size: 1.0rem;
+    padding-bottom: 2.5rem;
+}
+
+.section-prep {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 430px;
+}
+
+.prep-title {
+    color: hsl(332, 51%, 32%);
+    padding-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+span {
+    font-weight: bold;
+}
+
+.prep-list {
+    padding-left: 1.6rem;
+}
+
+.prep-list-point {
+    padding-bottom: 0.9rem;
+}
+
+.section-ingredients {
+    padding-top: 2rem;
+}
+
+.ingredients-title {
+    font-family: 'Young Serif', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    color: hsl(14, 45%, 36%);
+}
+
+.ingredients-list {
+    padding-left: 2rem;
+}
+
+.ingredients-list-point {
+    padding-left: 1rem;
+    padding-bottom: 0.8rem;
+}
+
+.section-line {
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+.instructions-title {
+    font-family: 'Young Serif', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    color: hsl(14, 45%, 36%);
+}
+
+.instructions-list {
+    padding-left: 2rem;
+}
+
+.instructions-list li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+.instructions-list-point {
+    padding-left: 1rem;
+    padding-bottom: 0.8rem;
+}
+
+.nutrition-title {
+    font-family: 'Young Serif', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    color: hsl(14, 45%, 36%);
+}
+
+.nutrition-txt {
+    padding-bottom: 1.5rem;
+}
+
+.nutrition-info {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding-left: 13rem;
+}
+
+.nutrition-type {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.nutrition-amount {
+    color: hsl(14, 45%, 36%);
+    text-align: right;
+    font-weight: bold;
+}
+
+.nutrition-line {
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
