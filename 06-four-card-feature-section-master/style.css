@@ -1,0 +1,189 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: hsl(0, 0%, 98%);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* STYLING */
+
+.section-background {
+    background-color: hsl(0, 0%, 98%);
+    padding: 3rem 1.5rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header-title-one {
+    color: hsl(234, 12%, 34%);
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.header-title-two {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.header-txt {
+    font-size: 0.9375rem;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    margin-top: 1rem;
+    max-width: 600px;
+}
+
+/* GRID LAYOUT */
+
+.section-article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.section-card-one,
+.section-card-two,
+.section-card-three,
+.section-card-four {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card-one::before,
+.section-card-two::before,
+.section-card-three::before,
+.section-card-four::before {
+    content: "";
+    height: 0.35rem;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section-card-one::before {
+    background-color: hsl(180, 62%, 55%);
+}
+
+.section-card-two::before {
+    background-color: hsl(0, 78%, 62%);
+}
+
+.section-card-three::before {
+    background-color: hsl(34, 97%, 64%);
+}
+
+.section-card-four::before {
+    background-color: hsl(212, 86%, 64%);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.125rem;
+    color: hsl(234, 12%, 34%);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.card-txt {
+    font-size: 0.9375rem;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.card-img {
+    max-width: 60px;
+    margin-left: auto;
+}
+
+/* HOVER EFFECTS */
+.section-card-one:hover,
+.section-card-two:hover,
+.section-card-three:hover,
+.section-card-four:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* RESPONSIVE DESIGN FOR MOBILE */
+@media (max-width: 37.5em) {
+    .header-title-one {
+        font-size: 1.4rem;
+    }
+
+    .header-title-two {
+        font-size: 1.4rem;
+    }
+    
+    .section-article {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-img {
+        margin-left: auto;
+        margin-top: 1rem;
+    }
+}
