@@ -79,9 +79,9 @@ h6 {
     grid-template-columns: repeat(3fr, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
-        "card1 card2 card3"
-        "card1 card4 card3"
-        "card1 card4 card3";
+        "card1 card2 card4"
+        "card1 card3 card4"
+        "card1 card3 card4";
     gap: 2rem;
     padding: 2rem;
     justify-items: center;
