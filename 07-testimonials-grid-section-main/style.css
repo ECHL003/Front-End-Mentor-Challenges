@@ -46,18 +46,47 @@ h6 {
     min-height: 100vh;
 }
 
+.section-testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 6rem;
+    gap: 2rem;
+    grid-template-areas:
+        "one one two five"
+        "three four four five";
+}
+
+.testimonial-one {
+    grid-area: one;
+}
+
+.testimonial-two {
+    grid-area: two;
+}
+
+.testimonial-three {
+    grid-area: three;
+}
+
+.testimonial-four {
+    grid-area: four;
+}
+
+.testimonial-five {
+    grid-area: five;
+}
+
 .testimonial-container {
+    position: relative;
     border-radius: 1rem;
     padding: 2rem;
-    position: relative;
-    max-width: 800px;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .testimonial-info {
     display: flex;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 .testimonial-img {
@@ -66,7 +95,6 @@ h6 {
     height: 50px;
     margin-right: 1rem;
 }
-
 
 .testimonial-text {
     display: flex;
@@ -82,15 +110,14 @@ h6 {
     opacity: 0.75;
     font-size: 0.875rem;
     margin: 0;
-    color: hsl(0, 0%, 81%);
+    color: hsl(0, 0%, 50%);
 }
 
 .testimonial-title {
     font-size: 1.6rem;
     margin-bottom: 1rem;
-    font-weight: 700;
     line-height: 1.4;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .testimonial-quote {
@@ -98,7 +125,7 @@ h6 {
     font-weight: 500;
     line-height: 1.6;
     position: relative;
-    color: hsl(0, 0%, 81%);
+    color: hsl(0, 0%, 70%);
 }
 
 .testimonial-quote {
@@ -111,6 +138,68 @@ h6 {
     color: white;
 }
 
-.testimonial-one .testimonial-img{
+.testimonial-one .testimonial-img {
     border: 3px solid hsl(263, 61%, 64%);
+}
+
+.testimonial-one .testimonial-img-quote {
+    position: absolute;
+    top: -1.2px;
+    right: 80px;
+    width: 150px;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+.testimonial-two {
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+
+.testimonial-three {
+    background-color: white;
+    color: hsl(217, 19%, 35%);
+}
+
+.testimonial-four {
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
+
+.testimonial-four .testimonial-img {
+    border: 3px solid hsl(263, 61%, 64%);
+}
+
+.testimonial-five {
+    background-color: white;
+    color: hsl(217, 19%, 35%);
+}
+
+/* Mobile-first design for testimonials */
+@media (max-width: 600px) {
+    .section-testimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    .testimonial-container {
+        max-width: 100%;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+
+    .section-background {
+        padding: 1rem 0.5rem;
+    }
+
+    .testimonial-one .testimonial-img-quote {
+        top: -1.2px;
+        right: 25px;
+        width: 140px;
+        z-index: 0;
+        opacity: 0.4;
+    }
 }
