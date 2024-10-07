@@ -15,9 +15,9 @@
 }
 
 body {
-    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Hanken Grotesk';
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    background-color: hsl(0, 0%, 98%);
 }
 
 img,
@@ -27,6 +27,13 @@ canvas,
 svg {
     display: block;
     max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
 }
 
 p,
@@ -39,6 +46,203 @@ h6 {
     overflow-wrap: break-word;
 }
 
+#root,
+#__next {
+    isolation: isolate;
+}
+
 /* STYLING */
+
+.section__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card__container {
+    background-color: white;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 1rem 2rem hsl(221, 100%, 96%);
+}
+
+.card--result {
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 2rem;
+    flex: 1;
+}
+
+.card__result__header {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.7;
+}
+
+.card__result__score__area {
+    background: linear-gradient(180deg, hsl(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__result__score {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.card__result__score__max {
+    font-size: 0.9rem;
+    opacity: 0.5;
+}
+
+.card__result__type {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.card__result__description {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    opacity: 0.6;
+    font-weight: 500;
+}
+
+.card--summary {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card__summary__header {
+    font-weight: 800;
+    color: hsl(224, 30%, 27%);
+}
+
+.card__summary_scores {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card__summary__reaction__area,
+.card__summary__memory__area,
+.card__summary__verbal__area,
+.card__summary__visual__area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card__summary__reaction__area {
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.card__summary__memory__area {
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.card__summary__verbal__area {
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.card__summary__visual__area {
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.card__summary__reaction__area:hover {
+    background-color: hsla(0, 100%, 67%, 0.3);
+    transform: translateY(-5px);
+}
+
+.card__summary__memory__area:hover {
+    background-color: hsla(39, 100%, 56%, 0.3);
+    transform: translateY(-5px);
+}
+
+.card__summary__verbal__area:hover {
+    background-color: hsla(166, 100%, 37%, 0.3);
+    transform: translateY(-5px);
+}
+
+.card__summary__visual__area:hover {
+    background-color: hsla(234, 85%, 45%, 0.3);
+    transform: translateY(-5px);
+}
+
+.card__summary__reaction__title,
+.card__summary__memory__title,
+.card__summary__verbal__title,
+.card__summary__visual__title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-right: 5rem;
+}
+
+.card__summary__reaction__title {
+    color: hsl(0, 100%, 67%);
+}
+
+.card__summary__memory__title {
+    color: hsl(39, 100%, 56%);
+}
+
+.card__summary__verbal__title {
+    color: hsl(166, 100%, 37%);
+}
+
+.card__summary__visual__title {
+    color: hsl(234, 85%, 45%);
+}
+
+.card__summary__reaction__score,
+.card__summary__memory__score,
+.card__summary__verbal__score,
+.card__summary__visual__score {
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 1;
+}
+
+span {
+    font-weight: 800;
+    color: hsl(224, 30%, 27%);
+}
+
+button {
+    width: 100%;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: hsl(224, 30%, 37%);
+}
 
 /* MOBILE LAYOUT */
