@@ -246,3 +246,14 @@ button:hover {
 }
 
 /* MOBILE LAYOUT */
+
+@media (max-width: 37em) {
+    .section__card {
+        height: 129vh;
+    }
+
+    .card__container {
+        display: flex;
+        flex-direction: column;
+    }
+}
