@@ -1,0 +1,80 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: hsl(0, 0%, 98%);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* STYLING */
+
+.section-background {
+    background-color: hsl(210, 46%, 95%);
+    padding: 3rem 1.5rem;
+    min-height: 100vh;
+}
+
+.card-container {
+    position: relative;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.card-one {
+    display: flex;
+    background-color: hsl(256, 67%, 59%);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-one-text-main {
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.card-one-txt-secondary {
+    color: white;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.card-one-img {
+    width: 13rem;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
